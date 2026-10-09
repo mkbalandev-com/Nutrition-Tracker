@@ -1,5 +1,4 @@
-
-const API_URL = "http://localhost:5000";
+const API_URL = "https://nutrition-tracker-zl91.vercel.app";
 
 function getAuthHeaders() {
   const token = sessionStorage.getItem("nutriai_token");
@@ -68,7 +67,6 @@ export async function getFoodHistory(date) {
   return parseResponse(response);
 }
 
-// Save a meal category permanently in MongoDB
 export async function updateFoodCategory(
   analysisId,
   itemIndex,
